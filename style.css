@@ -1,0 +1,95 @@
+
+
+body{
+    background-color: rgb(44, 43, 43);
+}
+
+
+
+
+#main_div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    background-color: rgb(100, 100, 148);
+    height: 600px;
+    width: 450px;
+
+
+    border: 1px solid rgb(100, 100, 148);
+    border-radius: 10px;
+
+
+
+}
+
+#input_location{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+
+    width: 250px;
+    height: 30px;
+
+}
+
+
+
+#temperature_output{
+
+
+
+    transform:translate(175px,400px);
+    
+
+
+
+
+
+
+
+
+    
+    height: 70px;
+    width: 70px;
+}
+
+
+
+#temp_number{
+    font-weight: bold;
+    color: azure;
+    font-size: 20px;
+}
+
+
+
+#info_button{
+
+    transform:translate(145px,300px);
+
+
+    height: 20px;
+    width: 150px;
+
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 0;
+}
+
+#main_icon{
+
+    transform:translate(185px, 10px);
+    
+    height: 70px;
+    width: 70px;
+
+
+}
