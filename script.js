@@ -7,6 +7,19 @@ async function getWeatherAndTime() {
 
   try {
     const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(location)}&appid=${API_KEY}&units=metric`);
+
+    let iconHTML = "";
+
+    //  spinner here!! 
+
+    iconHTML='<i class="fa-solid fa-spinner fa-spin-pulse" style="color: #74C0FC;"></i>'
+
+
+
+
+
+
+
     if (!response.ok) throw new Error("Location not found");
 
     const data = await response.json();
@@ -47,7 +60,7 @@ async function getWeatherAndTime() {
     const weatherMain = data.weather[0].main.toLowerCase();
     const isDayTime = hour >= 6 && hour < 18;
 
-    let iconHTML = "";
+    
 
     if (weatherMain === "clear") {
       iconHTML = isDayTime
