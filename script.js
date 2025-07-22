@@ -54,7 +54,7 @@ async function getWeatherAndTime() {
         ? `<i class="fa-solid fa-sun  fa-3x" style="color: #FFD43B;"></i>`
         : `<i class="fa-solid fa-moon fa-3x " style="color: #99dbc7;"></i>`;
     } else if (weatherMain === "clouds") {
-      iconHTML = `<i class="fa-solid fa-cloud fa-3x" style="color: #788191;"></i>`;
+      iconHTML = `<i class="fa-solid fa-cloud fa-4x" style="color: #788191;"></i>`;
     } else if (weatherMain === "rain" || weatherMain === "drizzle") {
       iconHTML = `<i class="fa-solid fa-cloud-rain fa-3x" style="color: #929bab;"></i>`;
     } else if (weatherMain === "thunderstorm") {
