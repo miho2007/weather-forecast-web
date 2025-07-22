@@ -51,17 +51,17 @@ async function getWeatherAndTime() {
 
     if (weatherMain === "clear") {
       iconHTML = isDayTime
-        ? `<i class="fa-solid fa-sun  fa-3x" style="color: #FFD43B;"></i>`
-        : `<i class="fa-solid fa-moon fa-3x " style="color: #99dbc7;"></i>`;
+        ? `<i class="fa-solid fa-sun  fa-4x" style="color: #FFD43B;"></i>`
+        : `<i class="fa-solid fa-moon fa-4x " style="color: #99dbc7;"></i>`;
     } else if (weatherMain === "clouds") {
       iconHTML = `<i class="fa-solid fa-cloud fa-4x" style="color: #788191;"></i>`;
     } else if (weatherMain === "rain" || weatherMain === "drizzle") {
-      iconHTML = `<i class="fa-solid fa-cloud-rain fa-3x" style="color: #929bab;"></i>`;
+      iconHTML = `<i class="fa-solid fa-cloud-rain fa-4x" style="color: #929bab;"></i>`;
     } else if (weatherMain === "thunderstorm") {
-      iconHTML = `<i class="fa-solid fa-cloud-bolt fa-3x" style="color: #79859a;"></i>`;
+      iconHTML = `<i class="fa-solid fa-cloud-bolt fa-4x" style="color: #79859a;"></i>`;
     } else {
       // fallback if unrecognized condition
-      iconHTML = `<i class="fa-solid fa-question-circle fa-3x" style="color: #ccc;"></i>`;
+      iconHTML = `<i class="fa-solid fa-question-circle fa-4x" style="color: #ccc;"></i>`;
     }
 
     weatherIconOutput.innerHTML = iconHTML;
